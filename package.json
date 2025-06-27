@@ -2,7 +2,7 @@
   "name": "pathfinding-visualizer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Ajad-cpu.github.io/AlgoPath",
+  "homepage": "https://algo-path-one.vercel.app/",
   "dependencies": {
     "bootstrap": "^4.5.2",
     "cra-template": "1.0.3",
