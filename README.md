@@ -2,9 +2,6 @@
 
 A **React**-based graphical application for visualizing pathfinding algorithms and maze generation techniques. This open-source project serves as a foundation for developers and educators to explore, experiment with, and extend various algorithms in an interactive environment.
 
-**Try it live:**
-[View the demo](https://rohithaug.github.io/pathfinding-visualizer/)
-
 ---
 
 ## ✨ Features
