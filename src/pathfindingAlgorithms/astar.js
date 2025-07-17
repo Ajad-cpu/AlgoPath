@@ -2,8 +2,8 @@ export function astar(grid, startNode, finishNode) {
   if (!startNode || !finishNode || startNode === finishNode) {
     return false;
   }
-  let unvisitedNodes = []; //open list
-  let visitedNodesInOrder = []; //closed list
+  let unvisitedNodes = []; 
+  let visitedNodesInOrder = []; 
   startNode.distance = 0;
   unvisitedNodes.push(startNode);
 
