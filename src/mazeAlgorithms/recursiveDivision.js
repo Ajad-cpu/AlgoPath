@@ -18,8 +18,6 @@ function range(len) {
   return result;
 }
 
-//dir === 0 => Horizontal
-//dir === 1 => Vertical
 
 function getRecursiveWalls(vertical, horizontal, grid, startNode, finishNode) {
   if (vertical.length < 2 || horizontal.length < 2) {
@@ -86,8 +84,6 @@ function generateOddRandomNumber(array) {
   return array[randomNum];
 }
 
-//dir === 0 => Horizontal
-//dir === 1 => Vertical
 
 function addWall(dir, num, vertical, horizontal, startNode, finishNode) {
   let isStartFinish = false;
