@@ -28,7 +28,6 @@ export function bidirectionalGreedySearch(grid, startNode, finishNode) {
       return [visitedNodesInOrderStart, visitedNodesInOrderFinish, true];
     }
 
-    //Start side search
     let neighbours = getNeighbours(closestNodeStart, grid);
     for (let neighbour of neighbours) {
       if (!neighbourNotInUnvisitedNodes(neighbour, unvisitedNodesFinish)) {
@@ -37,7 +36,6 @@ export function bidirectionalGreedySearch(grid, startNode, finishNode) {
         return [visitedNodesInOrderStart, visitedNodesInOrderFinish, true];
       }
       let distance = closestNodeStart.distance + 1;
-      //f(n) = h(n)
       if (neighbourNotInUnvisitedNodes(neighbour, unvisitedNodesStart)) {
         unvisitedNodesStart.unshift(neighbour);
         neighbour.distance = distance;
@@ -50,7 +48,6 @@ export function bidirectionalGreedySearch(grid, startNode, finishNode) {
       }
     }
 
-    //Finish side search
     neighbours = getNeighbours(closestNodeFinish, grid);
     for (let neighbour of neighbours) {
       if (!neighbourNotInUnvisitedNodes(neighbour, unvisitedNodesStart)) {
@@ -59,7 +56,6 @@ export function bidirectionalGreedySearch(grid, startNode, finishNode) {
         return [visitedNodesInOrderStart, visitedNodesInOrderFinish, true];
       }
       let distance = closestNodeFinish.distance + 1;
-      //f(n) = h(n)
       if (neighbourNotInUnvisitedNodes(neighbour, unvisitedNodesFinish)) {
         unvisitedNodesFinish.unshift(neighbour);
         neighbour.distance = distance;
